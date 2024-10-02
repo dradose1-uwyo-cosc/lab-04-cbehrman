@@ -1,12 +1,8 @@
-# Your Name Here
+# Caleb Behrman
 # UWYO COSC 1010
-# Submission Date
+# 10/2/24
 # Lab 03 
 # Lab Section: 
-# Sources, people worked with, help given to: 
-# your
-# comments
-# here
 
 
 
@@ -93,6 +89,20 @@ min_temps = [
     -1, -1, 11, 13
 ]
 
+sum_max=0
+sum_min=0
+count=len(max_temps)
+
+for i in range(count):
+    sum_max += max_temps[i]
+    sum_min += min_temps[i]
+
+average_max = sum_max/count
+average_min = sum_min/count
+
+print("Average Maximum Temp.:", average_max)
+print("Average Minimum Temp.:", average_min)
+
 # The above two lists are datasets for the maximum and minimum temperatures for Laramie in 2023.
 # Each of these lists has the same length, indicating that they both have the same index positions.
 # Write a single for loop to calculate both the average maximum temperature and the average minimum temperature.
@@ -102,4 +112,8 @@ min_temps = [
 # For the next part, determine the highest and lowest recorded temperatures.
 # HINT: You can find this information without using any logic or looping.
 
+highest_max_temp= max(max_temps)
+lowest_min_temp= min(min_temps)
 
+print("Highest Recorded Max Temp:", highest_max_temp)
+print("Lowest Recorded Min Temp:", lowest_min_temp)
